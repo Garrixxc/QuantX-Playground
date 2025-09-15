@@ -13,5 +13,9 @@ COPY . .
 ENV PORT=8000
 EXPOSE 8000
 
-CMD ["streamlit", "run", "app.py", "--server.headless=true", "--server.port=8000", "--server.address=0.0.0.0"]
-
+# Use shell so ${PORT} expands on Vercel; fallback to 8000 for local docker run
+CMD bash -lc 'streamlit run app.py \
+  --server.headless=true \
+  --server.address=0.0.0.0 \
+  --server.port=${PORT:-8000} \
+  --browser.gatherUsageStats=false'
