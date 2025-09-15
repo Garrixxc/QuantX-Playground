@@ -24,7 +24,6 @@ ENV STREAMLIT_SERVER_HEADLESS=true \
 ENV PORT=8000
 EXPOSE 8000
 
-# Log the chosen port, then start Streamlit bound to 0.0.0.0:${PORT}
 CMD bash -lc 'echo "Starting on PORT=${PORT}"; streamlit run app.py \
   --server.address=0.0.0.0 \
   --server.port=${PORT:-8000} \
