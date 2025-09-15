@@ -51,8 +51,8 @@ html,body,[data-testid="stAppViewContainer"]{
 </style>
 """
 st.markdown(NEON_CSS, unsafe_allow_html=True)
-st.markdown('<div class="header-wrap"><div class="neon-title">🎛️ Futuristic Math Lab — SDEs • Algorithms • Numerical Methods</div></div>', unsafe_allow_html=True)
-st.caption("Built in Streamlit • Neon glass UI • GPU-friendly simulations")
+st.markdown('<div class="header-wrap"><div class="neon-title">🎛️ QuantX Playground — SDEs • Algorithms • Numerical Methods</div></div>', unsafe_allow_html=True)
+
 
 # ================= UTIL =================
 def download_csv_from_paths(X, t, name):
