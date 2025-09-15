@@ -64,9 +64,9 @@ def download_csv_from_paths(X, t, name):
 
 # =================== MAIN TABS ===================
 tab_sde, tab_algo, tab_num = st.tabs([
-    "🧪 Stochastic Differential Equations",
-    "🧮 Algorithms Lab",
-    "📐 Numerical Methods"
+    "Stochastic Differential Equations",
+    "Algorithms Lab",
+    "Numerical Methods"
 ])
 
 # ===========================================================
@@ -183,7 +183,7 @@ with tab_sde:
             X[:,i+1] = X[:,i]*np.exp((mu-0.5*v)*dt + np.sqrt(v)*dW1)
         stats_text = "Heston: stochastic variance; full-truncation Euler"
 
-    t1, t2, t3 = st.tabs(["📈 Paths","📊 Histogram @ T","📐 Stats"])
+    t1, t2, t3 = st.tabs(["Paths","Histogram @ T","Stats"])
     with t1:
         fig = go.Figure()
         for k in range(paths):
@@ -218,7 +218,7 @@ with tab_sde:
 # ===========================================================
 with tab_algo:
     st.markdown('<div class="glass">Interactive CS algorithm visualizers with step controls and neon charts.</div>', unsafe_allow_html=True)
-    algo_tab1, algo_tab2, algo_tab3 = st.tabs(["🔀 Sorting Visualizer", "🗺️ Graph Algorithms", "⭐ A* Grid Path"])
+    algo_tab1, algo_tab2, algo_tab3 = st.tabs(["Sorting Visualizer", "Graph Algorithms", "A* Grid Path"])
 
 
     # ---------- Sorting ----------
