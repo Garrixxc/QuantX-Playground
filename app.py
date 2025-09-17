@@ -51,7 +51,7 @@ html,body,[data-testid="stAppViewContainer"]{
 </style>
 """
 st.markdown(NEON_CSS, unsafe_allow_html=True)
-st.markdown('<div class="header-wrap"><div class="neon-title">🎛️ QuantX Playground  |SDEs • Algorithms • Numerical Methods|s</div></div>', unsafe_allow_html=True)
+st.markdown('<div class="header-wrap"><div class="neon-title">🎛️ QuantX Playground </div></div>', unsafe_allow_html=True)
 
 
 # ================= UTIL =================
